@@ -57,6 +57,7 @@ public class Problem1012 {
 
 			if (m >=0 && n >= 0 && m < M && n < M && map[m][n] == 1 && visited[m][n] != 1) {
 				visited[m][n] = 1;
+				System.out.println("visit[" + m + "]" + "[" + n + "]");
 				dfs(m, n);
 			}
 		}

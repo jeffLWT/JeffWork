@@ -30,7 +30,7 @@ public class DFS {
 	
 	public static void dfs(int start) {
 		vertexVisit[start] = 1;
-		
+
 		for (int i = 1;i <= vertex;i++) {
 			if (vertexMap[start][i] == 1 && vertexVisit[i] == 0) {
 				System.out.println(start + " -> " + i + "로 이동합니다.");

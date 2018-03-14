@@ -13,7 +13,7 @@ public class BOJ2965 {
 		int right = Math.abs(B - C);
 		int result = 0;
 		int temp = B;
-		
+
 		if (left < right) {
 			result = C - temp - 1; 
 		} else {

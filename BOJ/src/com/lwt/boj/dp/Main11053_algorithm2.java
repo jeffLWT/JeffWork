@@ -32,7 +32,7 @@ public class Main11053_algorithm2 {
 			} else if (list[length - 1] < arr[i]) { // 입력된 값이 list의 마지막 값보다 클 경우
 				list[length] = arr[i];
 				length++;
-			} else {
+			} else { // 입력된 값이 list 에 있는 경우 index 찾아 업데이트
 				int index = Arrays.binarySearch(arr, 0, length, arr[i]);
 				index = (index < 0) ? -index - 1 : index;
 				list[index] = arr[i];
